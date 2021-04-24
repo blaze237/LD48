@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/LD48 Main/Scenes/TestWorld.unity
+- path: Assets/LD48 Main/Scenes/TestMain.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

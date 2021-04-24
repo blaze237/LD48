@@ -19,12 +19,14 @@ public class PasswordTerminal : IGlowingInteractable
         //Default does nothing
         Debug.Log("Correct pw!");
         Player.instance.ReleaseControls();
+        m_active = false;
     }
 
     public void OnPasswordIncorrect()
     {
         //Default does nothing
         Debug.Log("wrong pw!");
+        m_active = false;
     }
    
     public override void OnInteract()

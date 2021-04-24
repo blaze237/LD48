@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
         m_inventory = new PlayerInventory();
         m_inventory.AddItem(Items.BlueKey);
 
-
+     
 
         //Check if instance already exists
         if (instance == null)
