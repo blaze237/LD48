@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IInteractable
 {
-    void OnHover();
+    void OnHover(bool m_hoverEnter);
     void OnInteract();
 }

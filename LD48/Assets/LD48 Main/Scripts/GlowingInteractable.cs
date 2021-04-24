@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DummyInteractable : IGlowingInteractable
+public abstract class IGlowingInteractable : MonoBehaviour, IInteractable
 {
-
-    public override void OnInteract()
+    public void OnHover(bool m_hoverEnter)
     {
-        Debug.Log("You Just interacted!");
+        //enable glow
     }
+
+    public abstract void OnInteract();
 
     // Start is called before the first frame update
     void Start()

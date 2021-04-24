@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInventory : MonoBehaviour
+public class PlayerInventory 
 {
-    Dictionary<Items, int> m_items;
+    private Dictionary<Items, int> m_items;
 
-    void AddItem(Items item)
+    public PlayerInventory()
+    {
+        m_items = new Dictionary<Items, int>(); 
+    }
+
+
+    public void AddItem(Items item)
     {
         if(m_items.ContainsKey(item))
         {
@@ -19,12 +25,12 @@ public class PlayerInventory : MonoBehaviour
     }
 
 
-    bool HasItem(Items item)
+    public bool HasItem(Items item)
     {
         return m_items.ContainsKey(item) && m_items[item] > 0;
     }
 
-    bool UseItem(Items item)
+    public bool UseItem(Items item)
     {
         if (HasItem(item))
         {
